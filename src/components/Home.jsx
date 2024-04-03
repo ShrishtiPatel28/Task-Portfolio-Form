@@ -15,9 +15,9 @@ function Home(name) {
     <div className="main w-full h-screen">
       <div className="left">
         <div className="text font-['montserrat']">
-          <h1 className="uppercase w-[330px] font-medium text-5xl mt-28 ml-32 leading-none tracking-wide">
+          <h1 className="uppercase w-[330px] font-medium mt-28 ml-32 leading-none tracking-wide" style={{fontSize:"4vw"}}>
             my name <br /> is{" "}
-            <span className="font-extrabold italic">
+            <span className="font-extrabold italic"style={{fontSize:"4vw"}}>
               {localStorage.getItem("name")
                 ? localStorage.getItem("name")
                 : "Jacob Jones"}
@@ -34,7 +34,7 @@ function Home(name) {
               : "london"}
           </h3>
           <div className="but">
-            <button className="bg-black text-white text-xs p-2 tracking-wider px-6 ml-32 mt-8 flex gap-2">
+            <button className="bg-black text-white text-xs p-2 tracking-wider px-6 ml-32 mt-6 flex gap-2">
               Let's talk with me
               <FaArrowUp
                 style={{
@@ -48,7 +48,7 @@ function Home(name) {
             </button>
           </div>
         </div>
-        <div className="details ml-32 mt-14 flex gap-14">
+        <div className="details ml-32 mt-10 flex gap-14">
           <div className="flex gap-1 items-center ">
             <MdLocalPhone 
               style={{
